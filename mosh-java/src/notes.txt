@@ -1,2 +1,19 @@
-/mosh-java/.idea
-/mosh-java/mosh-java.iml
+{--> Intro && Memory Allocation
+        var textBox1 = new TextBox();
+        textBox1.text = "Box 1";
+
+        var texBox2 = new TextBox();
+        texBox2.text = "Box 2";
+
+//        System.out.println(textBox1.text);
+//        System.out.println(texBox2.text);
+
+        // ---Memory Allocation---- :
+
+        var textBox3 = texBox2;
+//        System.out.println(texBox2 == textBox3);
+        texBox2.text = "upated box 2";
+        System.out.println(textBox3.text);
+}
+
+
