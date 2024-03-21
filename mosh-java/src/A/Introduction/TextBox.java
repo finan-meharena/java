@@ -1,4 +1,4 @@
-package Introduction;
+package A.Introduction;
 
 public class TextBox {
     public String text = ""; // field

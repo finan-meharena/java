@@ -1,4 +1,4 @@
-package Introduction.SetterAndGetter;
+package A.Introduction.SetterAndGetter;
 
 public class Employee {
     private int baseSalary;

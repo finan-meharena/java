@@ -1,4 +1,4 @@
-package Introduction.Decoupling;
+package A.Introduction.Decoupling;
 
 public class Main {
     public static void main(String[] args) {
