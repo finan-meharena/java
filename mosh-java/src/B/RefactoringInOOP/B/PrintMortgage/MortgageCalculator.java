@@ -1,6 +1,9 @@
 package B.RefactoringInOOP.B.PrintMortgage;
 
 public class MortgageCalculator {
+    public final static byte MONTHS_IN_YEAR = 12;
+    public final static byte PERCENT = 100;
+
     private int principal;
     private float annualInterest;
     private byte years;
@@ -13,11 +16,11 @@ public class MortgageCalculator {
 
     public double calculateBalance(
             ) {
-        float monthlyInterest = annualInterest / Main.PERCENT / Main.MONTHS_IN_YEAR;
-        float numberOfPayments = years * Main.MONTHS_IN_YEAR;
+        float monthlyInterest = getMonthlyInterest();
+        double numberOfPayments = getNumberOfPayments();
 
         double balance = principal
-                * (Math.pow(1 + monthlyInterest, numberOfPayments) - Math.pow(1 + monthlyInterest, numberOfPaymentsMade))
+                * (Math.pow(1 + monthlyInterest, numberOfPayments) - Math.pow(1 + monthlyInterest, numberOfPayments))
                 / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
 
         return balance;
@@ -25,8 +28,8 @@ public class MortgageCalculator {
 
     public double calculateMortgage() {
 
-        float monthlyInterest = annualInterest / Main.PERCENT / Main.MONTHS_IN_YEAR;
-        float numberOfPayments = years * Main.MONTHS_IN_YEAR;
+        float monthlyInterest = getMonthlyInterest();
+        float numberOfPayments = getNumberOfPayments();
 
         double mortgage = principal
                 * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
@@ -35,6 +38,12 @@ public class MortgageCalculator {
         return mortgage;
     }
 
+    private int getNumberOfPayments() {
+        return years * MONTHS_IN_YEAR;
+    }
+    private float getMonthlyInterest() {
+        return annualInterest / PERCENT / MONTHS_IN_YEAR;
+    }
     public short getYears() {
         return years;
     }
