@@ -1,4 +1,0 @@
-private fields and methods are not inherited
-have to call super() method if inheriting from a class with params ?
-
-
