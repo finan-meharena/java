@@ -12,7 +12,7 @@ public class Employee {
         return baseSalary + (hourlyRate * extraHours);
     }
 
-    public void setBaseSalary(int baseSalary){
+    public void setBaseSalary(int baseSalary){ // setter and getter to validate fields
         if (baseSalary <= 0)
             throw new IllegalArgumentException("Salary can't be zero or less");
         this.baseSalary = baseSalary;

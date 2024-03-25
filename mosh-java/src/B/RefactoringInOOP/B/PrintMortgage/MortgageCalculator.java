@@ -3,6 +3,7 @@ package B.RefactoringInOOP.B.PrintMortgage;
 import java.text.NumberFormat;
 
 public class MortgageCalculator {
+    // set fields to private cos they are implementation details
     private final static byte MONTHS_IN_YEAR = 12;
     private final static byte PERCENT = 100;
 
