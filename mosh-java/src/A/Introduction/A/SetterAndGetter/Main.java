@@ -1,4 +1,4 @@
-package A.Introduction.SetterAndGetter;
+package A.Introduction.A.SetterAndGetter;
 
 public class Main {
     public static void main(String[] args) {

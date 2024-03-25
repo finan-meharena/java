@@ -1,4 +1,4 @@
-package A.Introduction.StaticMembers;
+package A.Introduction.E.StaticMembers;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package A.Introduction.Decoupling;
+package A.Introduction.B.Decoupling;
 
 public class Browser {
 
