@@ -7,25 +7,26 @@ public class MortgageReport {
     private MortgageCalculator calculator;
 
     public MortgageReport(MortgageCalculator calculator) {
-        this.calculator = calculator;
+        this.calculator = calculator; // add a calculator object property/field
     }
 
     public void printMortgage() {
-        // create mortgage calculator
         double mortgage = calculator.calculateMortgage();
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
-        System.out.println();
-        System.out.println("MORTGAGE");
-        System.out.println("--------");
+        printHeader("Mortgage");
         System.out.println("Monthly Payments: " + mortgageFormatted);
     }
 
     public void printPaymentSchedule() {
-        System.out.println();
-        System.out.println("PAYMENT SCHEDULE");
-        System.out.println("----------------");
+        printHeader("PAYMENT SCHEDULE");
         for (double balance : calculator.getRemainingBalances()) {
             System.out.println(NumberFormat.getCurrencyInstance().format(balance));
         }
+    }
+
+    public void printHeader(String message){
+        System.out.println();
+        System.out.println(message);
+        System.out.println("--------");
     }
 }
