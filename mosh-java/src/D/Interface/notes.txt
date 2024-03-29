@@ -1,0 +1,1 @@
+use interface to build loosely-coupled, extensible and testable applications
