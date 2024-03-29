@@ -1,1 +1,3 @@
 use interface to build loosely-coupled, extensible and testable applications
+    interface => WHAT SHOULD BE DONE
+    classes => HOW IT SHOULD BE DONE
