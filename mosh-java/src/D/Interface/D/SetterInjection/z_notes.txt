@@ -1,0 +1,3 @@
+our classes should not instantiate their dependency
+
+ways to inject dependency : constructor, setter&getter, method injection
