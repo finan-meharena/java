@@ -1,4 +1,4 @@
-package B.generics.B.ComparabaleInterface;
+package B.generics.C.GenericMethods;
 
 public class List {
     private int[] items = new int[10];

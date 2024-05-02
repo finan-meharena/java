@@ -1,4 +1,4 @@
-package B.generics.B.ComparabaleInterface;
+package B.generics.C.GenericMethods;
 
 public class GenericList<T> {
     private T[] items = (T[]) new Object[10];
