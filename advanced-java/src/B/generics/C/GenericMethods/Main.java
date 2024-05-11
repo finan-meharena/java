@@ -11,6 +11,5 @@ public class Main {
 
        Utils.printUser(user);
 
-
     }
 }
